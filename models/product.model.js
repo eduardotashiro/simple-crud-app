@@ -1,11 +1,12 @@
-// Define o schema do produto (estrutura do dado no banco)
 const mongoose = require('mongoose');
-// Define o schema do produto (estrutura do dado no banco)
+
 const ProductSchema = mongoose.Schema(
+
     {
+
         name: {
             type: String,
-            required: [true, "Pleas enter product name"]
+            required: [true, "Please enter product name"]
         },
 
         quantity: {
@@ -13,12 +14,15 @@ const ProductSchema = mongoose.Schema(
             required: true,
             default: 0 // Valor padrão caso o usuário não informe
         },
-        image: {
-            type: String,
-            required: false
+
+        price: {
+            type: Number,
+            required: true,
+            default: 0
         },
 
     },
+
     {
         timestamps: true // Cria automaticamente os campos createdAt e updatedAt
     }
