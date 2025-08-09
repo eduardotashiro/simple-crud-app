@@ -1,4 +1,4 @@
-# SIMPLE CRUD APP 🛠
+# SIMPLE CRUD APP
 
 Aplicação simples para gerenciamento de produtos, desenvolvida com **Node.js**, **Express** e **MongoDB**.  
 
