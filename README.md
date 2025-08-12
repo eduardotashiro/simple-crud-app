@@ -50,7 +50,18 @@ git clone https://github.com/eduardotashiro/simple-crud-app.git
 npm install
 ```
 
-### 3. Crie um arquivo .env na raiz do projeto
+### 3. Crie um arquivo `.env` na raiz do projeto com a variável de conexão do MongoDB
 ```
-DB_URI=seu_link_de_conexao_com_mongodb
+DB_URI=mongodb+srv://usuario:senha@cluster.mongodb.net/nomeDoBanco?retryWrites=true&w=majority
+```
+
+> Substitua `usuario`, `senha` e `nomeDoBanco` pelos seus dados reais do MongoDB
+
+### Exemplo da requisição ***POST***
+```
+{
+  "name": "Teclado Mecânico",
+  "quantity": 100,
+  "price": 1.99
+}
 ```
