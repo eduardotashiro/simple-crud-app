@@ -41,7 +41,16 @@ O projeto implementa as operações **CRUD** (_Create, Read, Update, Delete_) pa
 ## Como Rodar o Projeto
 
 ### 1. Clone o repositório
+```
+git clone https://github.com/eduardotashiro/simple-crud-app.git
 
-```bash
-git clone https://github.com/seu-usuario/simple-crud-app.git
+```
+ ### 2. Instale a dependência
+```
+npm install
+```
+
+### 3. Crie um arquivo .env na raiz do projeto
+```
+DB_URI=seu_link_de_conexao_com_mongodb
 ```
